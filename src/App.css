@@ -1,0 +1,30 @@
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.cutomer-card {
+  border: 1px solid grey;
+  margin: 1rem;
+  background-color: #f4f4f4;
+}
+
+.reward-card {
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px;
+}
+.reward-content {
+  display: flex;
+  justify-content: center;
+}
+
+.monthly-reward-table {
+  border: 1px solid black;
+}
+
+.monthly-reward-table th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}

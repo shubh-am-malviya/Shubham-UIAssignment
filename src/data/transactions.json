@@ -1,0 +1,11 @@
+{
+    "transactions": [
+        { "customerId": 1, "customerName": "Dave", "transactionDate": "2024-10-01", "transactionAmount": 120.55 },
+        { "customerId": 1, "customerName": "Dave", "transactionDate": "2024-10-10", "transactionAmount": 75.40 },
+        { "customerId": 2, "customerName": "Rishabh", "transactionDate": "2024-10-15", "transactionAmount": 200.00 },
+        { "customerId": 2, "customerName": "Rishabh", "transactionDate": "2024-11-03", "transactionAmount": 50.25 },
+        { "customerId": 3, "customerName": "Surya", "transactionDate": "2024-11-05", "transactionAmount": 55.84 },
+        { "customerId": 3, "customerName": "Surya", "transactionDate": "2024-12-01", "transactionAmount": 130.37 },
+        { "customerId": 1, "customerName": "Dave", "transactionDate": "2024-12-10", "transactionAmount": 80.85 }
+    ]
+}
