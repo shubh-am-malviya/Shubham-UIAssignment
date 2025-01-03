@@ -33,6 +33,7 @@ describe("App Component", () => {
 
 	it("should display customer content correctly when data is fetched successfully", async () => {
 		const fakeTransactionsData = [
+			{ customerId: 1, customerName: "Dave", transactionDate: "2023-10-12", transactionAmount: 80 },
 			{ customerId: 1, customerName: "Dave", transactionDate: "2024-10-01", transactionAmount: 120.55 },
 			{ customerId: 1, customerName: "Dave", transactionDate: "2024-10-10", transactionAmount: 75.4 },
 			{ customerId: 1, customerName: "Dave", transactionDate: "2024-12-10", transactionAmount: 80.85 },
@@ -47,13 +48,16 @@ describe("App Component", () => {
 		await waitFor(() => {
 			expect(screen.getByText(cutomerDisplayHeading)).toBeInTheDocument();
 
+			expect(screen.getByText("October-2023")).toBeInTheDocument();
+			expect(screen.getByText("30")).toBeInTheDocument();
+
 			expect(screen.getByText("October-2024")).toBeInTheDocument();
 			expect(screen.getByText("117")).toBeInTheDocument();
 
 			expect(screen.getByText("December-2024")).toBeInTheDocument();
 			expect(screen.getByText("31")).toBeInTheDocument();
 
-			expect(screen.getByText("Total Rewards: 148"));
+			expect(screen.getByText("Total Rewards: 178")).toBeInTheDocument();
 		});
 	});
 });
