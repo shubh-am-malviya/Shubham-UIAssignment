@@ -7,9 +7,9 @@
 export const getFilteredMonthlyRewards = (searchValue, rewards) => {
 	const rewardsKeys = Object.keys(rewards);
 
-	return rewardsKeys.filter((monthKey) => {
+	return rewardsKeys.filter((rewardMonthYear) => {
 		// constructing case-insensitive rewards data string to match with search value
-		const rewardDataString = `${monthKey} ${rewards[monthKey]}`.toLowerCase();
+		const rewardDataString = `${rewardMonthYear} ${rewards[rewardMonthYear]}`.toLowerCase();
 
 		return rewardDataString.includes(searchValue.toLowerCase());
 	});

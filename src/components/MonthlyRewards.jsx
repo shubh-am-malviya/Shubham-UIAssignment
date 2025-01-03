@@ -49,10 +49,10 @@ function MonthlyReward({ rewards }) {
 						</tr>
 					</thead>
 					<tbody>
-						{rewardRows.map((month) => (
-							<tr key={month}>
-								<td>{month}</td>
-								<td>{rewards[month]}</td>
+						{rewardRows.map((rewardMonthYear) => (
+							<tr key={rewardMonthYear}>
+								<td>{rewardMonthYear}</td>
+								<td>{rewards[rewardMonthYear]}</td>
 							</tr>
 						))}
 					</tbody>
