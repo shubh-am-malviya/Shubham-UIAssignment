@@ -31,7 +31,7 @@ describe("App Component", () => {
 		await waitFor(() => expect(screen.getByText("Failed to fetch transactions data")).toBeInTheDocument());
 	});
 
-	it("should display customer content when data is fetched successfully", async () => {
+	it("should display customer content correctly when data is fetched successfully", async () => {
 		const fakeTransactionsData = [
 			{ customerId: 1, customerName: "Dave", transactionDate: "2024-10-01", transactionAmount: 120.55 },
 			{ customerId: 1, customerName: "Dave", transactionDate: "2024-10-10", transactionAmount: 75.4 },
@@ -46,6 +46,14 @@ describe("App Component", () => {
 
 		await waitFor(() => {
 			expect(screen.getByText(cutomerDisplayHeading)).toBeInTheDocument();
+
+			expect(screen.getByText("October-2024")).toBeInTheDocument();
+			expect(screen.getByText("117")).toBeInTheDocument();
+
+			expect(screen.getByText("December-2024")).toBeInTheDocument();
+			expect(screen.getByText("31")).toBeInTheDocument();
+
+			expect(screen.getByText("Total Rewards: 148"));
 		});
 	});
 });
