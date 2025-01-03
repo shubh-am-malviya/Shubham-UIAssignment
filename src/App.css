@@ -14,6 +14,12 @@
   padding: 10px;
   margin: 10px;
 }
+.reward-searchbar {
+  width: 20%;
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
 .reward-content {
   display: flex;
   justify-content: center;
